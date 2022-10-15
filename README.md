@@ -16,7 +16,7 @@ a weather forecasting website using a weather api
 ###### the js code is mainly devided into 4 parts the getcurrent function which get the details of the current day, the getnext function which get the details of the next two days the display function which display the details of the whole 3 days and finally the search function which allow user to search at different riegons
 notice that to make code work you have to put your api key at both getcurrent and get next function
 
-##i built this website using 
+i built this website using 
 ###### html
 ###### css
 ###### bootstrap
