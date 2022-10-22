@@ -1,4 +1,4 @@
-# weatherly
+# weathrly
 a weather forecasting website using a weather api 
 weatherly is a weather forecasting website using wetharapi
 the site provide a realtime search to any region at the world and it also came with a responsive web page and a friendly user interface
