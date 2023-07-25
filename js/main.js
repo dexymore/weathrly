@@ -1,5 +1,5 @@
 
-const API_KEY=API_KEY
+import WEATHER_API_KEY from './test.js';
 
 
 let myinput=document.querySelectorAll(".myinput")
@@ -15,7 +15,7 @@ locate:"",
 textdisc:'',
 }
 //replace the ${process.env.} with your free api key
-    let data=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${region}&days=7`)
+    let data=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${ WEATHER_API_KEY}&q=${region}&days=7`)
 
     let info= await data.json()
 
@@ -42,7 +42,7 @@ let getNEXT= async function(region="cairo",day=1)
     textdisc:'',
     }
 //replace the ${process.env.} with your free api key
-    let data=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${region}&days=7`)
+    let data=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${ WEATHER_API_KEY}&q=${region}&days=7`)
 
     let info= await data.json()
     console.log(info)
