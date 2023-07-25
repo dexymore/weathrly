@@ -1,4 +1,8 @@
 
+
+
+
+
 let myinput=document.querySelectorAll(".myinput")
 
 let Gettcurrent=async function (region="cairo"){
@@ -11,8 +15,8 @@ let curr={
 locate:"",
 textdisc:'',
 }
-//replace the 🔴🔴add your api key here🔴🔴 with your free api key
-    let data=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=🔴🔴add your api key here🔴🔴&q=${region}&days=7`)
+//replace the ${process.env.} with your free api key
+    let data=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${region}&days=7`)
 
     let info= await data.json()
 
@@ -38,8 +42,8 @@ let getNEXT= async function(region="cairo",day=1)
     locate:"",
     textdisc:'',
     }
-//replace the 🔴🔴add your api key here🔴🔴 with your free api key
-    let data=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=🔴🔴add your api key here🔴🔴&q=${region}&days=7`)
+//replace the ${process.env.} with your free api key
+    let data=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${region}&days=7`)
 
     let info= await data.json()
     console.log(info)
